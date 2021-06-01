@@ -16,7 +16,11 @@ const config = {
                 // sass-loader node-sass 两个依赖都需要安装
                 test: /\.(scss|sass)$/,
                 use: ['style-loader', 'css-loader', 'sass-loader']
-            }
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+              },
         ]
     }
 }
